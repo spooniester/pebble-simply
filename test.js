@@ -1,6 +1,4 @@
-simply.on('singleClick', function(e) {
-  simply.subtitle('You pressed the ' + e.button + ' button!');
+simply.on('accelTap', function(e) {
+  simply.subtitle('You tapped across ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
   simply.vibe('short');
-  Pebble.showSimpleNotificationOnPebble('Hello!',
-  'Notifications from JavaScript? Welcome to the future!');
 });
